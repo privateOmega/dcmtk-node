@@ -13,6 +13,7 @@ const binariesToKeep = [
   'dcmqridx',
   'dcmconv',
   'storescu',
+  'dcmcjpeg',
 ];
 
 const installedAsModule = path.basename(path.resolve(__dirname, '..')) === 'node_modules';
