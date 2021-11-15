@@ -35,7 +35,7 @@ module.exports = (_options) => {
 
     // If we are scanning a directory (i.e. dumping multiple files at once), then include a flag to
     // print the dumped filename ahead of each result so we can parse them appropriately
-    if (args.includes('--scan-directories') || args.includes('+sd')) {
+    if ((args.includes('--scan-directories') || args.includes('+sd')) && command !== 'storescu') {
       if (!(args.includes('--print-filename') || args.includes('+F'))) {
         args.unshift('--print-filename');
       }
