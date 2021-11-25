@@ -62,6 +62,7 @@ module.exports = (settings = {}) => {
     dcmconv: getWrapper('dcmconv'),
     storescu: getWrapper('storescu'),
     dcmcjpeg: getWrapper('dcmcjpeg'),
+    getscu: getWrapper('getscu'),
     platform,
   };
 };
