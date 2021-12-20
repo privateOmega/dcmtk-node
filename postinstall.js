@@ -15,6 +15,7 @@ const binariesToKeep = [
   'storescu',
   'dcmcjpeg',
   'getscu',
+  'pdf2dcm',
 ];
 
 const installedAsModule = path.basename(path.resolve(__dirname, '..')) === 'node_modules';
