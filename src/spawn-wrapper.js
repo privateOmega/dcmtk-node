@@ -12,7 +12,7 @@ function killSpawnAndExit() {
 process.on('message', (message) => {
   if (message.signal === 'spawn') {
     // { stdio: 'inherit' } makes the spawned process share the parent's stdios (i.e. this script)
-    child = spawn(message.execString, message.args, { env: message.env, stdio: 'inherit' });
+    child = spawn(message.execString, message.args, { env: message.env, stdio: 'inherit', shell: true });
     child.on('exit', code => process.exit(code));
   }
 });
