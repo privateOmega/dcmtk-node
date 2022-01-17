@@ -64,6 +64,7 @@ module.exports = (settings = {}) => {
     dcmcjpeg: getWrapper('dcmcjpeg'),
     getscu: getWrapper('getscu'),
     pdf2dcm: getWrapper('pdf2dcm'),
+    dcmodify: getWrapper('dcmodify'),
     platform,
   };
 };

@@ -16,6 +16,7 @@ const binariesToKeep = [
   'dcmcjpeg',
   'getscu',
   'pdf2dcm',
+  'dcmodify',
 ];
 
 const installedAsModule = path.basename(path.resolve(__dirname, '..')) === 'node_modules';
