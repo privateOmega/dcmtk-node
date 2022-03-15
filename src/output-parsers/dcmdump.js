@@ -20,6 +20,11 @@ function parseFileDumpBlock(output) {
         multiLine = undefined;
       }
       // add current line header
+      if (header.tag === '0008,0018' && response[header.tag]) {
+        // eslint-disable-next-line no-console
+        console.debug('SOPInstanceUID already has a value, not overwriting');
+        return true;
+      }
       response[header.tag] = header;
       return true;
     }
